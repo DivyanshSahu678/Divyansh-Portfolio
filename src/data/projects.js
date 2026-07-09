@@ -1,41 +1,47 @@
 const projects = [
   {
     id: 1,
-    title: "Online Library Management System",
+    title: "Portfolio Website",
     description:
-      "A web-based library management system with book management, student records and authentication.",
+      "A modern developer portfolio built using React, Tailwind CSS and Framer Motion.",
 
-    tech: ["HTML", "CSS", "JavaScript", "Java", "MySQL"],
+    image: "/projects/portfolio.png",
 
-    github: "#",
+    tech: ["React", "Tailwind", "JavaScript"],
+
+    github: "https://github.com/DivyanshSahu678",
 
     live: "#",
   },
 
   {
     id: 2,
-    title: "Student Registration Portal",
+    title: "Online Library Management",
 
     description:
-      "Responsive registration portal with form validation and clean UI.",
+      "Library Management System using Java, JSP, Servlet and MySQL.",
 
-    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/projects/library.png",
 
-    github: "#",
+    tech: ["Java", "JSP", "Servlet", "MySQL"],
+
+    github: "https://github.com/DivyanshSahu678",
 
     live: "#",
   },
 
   {
     id: 3,
-    title: "Portfolio Website",
+    title: "Student Registration System",
 
     description:
-      "Modern AI/ML portfolio built using React and Tailwind CSS.",
+      "Responsive registration system with validation using HTML, CSS and JavaScript.",
 
-    tech: ["React", "Tailwind CSS"],
+    image: "/projects/student.png",
 
-    github: "#",
+    tech: ["HTML", "CSS", "JavaScript"],
+
+    github: "https://github.com/DivyanshSahu678",
 
     live: "#",
   },

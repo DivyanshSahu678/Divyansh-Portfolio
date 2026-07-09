@@ -3,37 +3,23 @@ const certificates = [
     id: 1,
     title: "Google Gemini for Students",
     issuer: "Google",
-    year: "2026",
-    description:
-      "Learned prompt engineering, AI fundamentals, responsible AI and practical use of Gemini."
+    image: "/certificates/gemini.png",
+    file: "/certificates/gemini.pdf",
   },
-
   {
     id: 2,
-    title: "Python for Beginners",
-    issuer: "Microsoft",
-    year: "2026",
-    description:
-      "Completed Python fundamentals including variables, loops, functions and problem solving."
+    title: "Generative AI for Beginners",
+    issuer: "Simplilearn",
+    image: "/certificates/simplilearn.png",
+    file: "/certificates/simplilearn.pdf",
   },
-
   {
     id: 3,
-    title: "JavaScript Introduction",
+    title: "Introduction to JavaScript",
     issuer: "Saylor Academy",
-    year: "2026",
-    description:
-      "Covered JavaScript fundamentals and DOM manipulation."
+    image: "/certificates/javascript.png",
+    file: "/certificates/javascript.pdf",
   },
-
-  {
-    id: 4,
-    title: "Java OOP",
-    issuer: "Infosys Springboard",
-    year: "2026",
-    description:
-      "Learned Object Oriented Programming concepts using Java."
-  }
 ];
 
 export default certificates;

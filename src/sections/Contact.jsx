@@ -1,61 +1,105 @@
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
+import profile from "../data/profile";
+
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="border-t border-neutral-800 py-32"
-    >
+    <section id="contact" className="py-24">
       <Container>
 
         <SectionTitle
           number="06"
-          title="Let's Connect"
-          subtitle="I'm always open to discussing new opportunities, collaborations and innovative ideas."
+          title="Contact"
+          subtitle="Let's connect and build something amazing together."
         />
 
-        <div className="rounded-xl border border-neutral-800 bg-[#0d0d0d] p-10">
+        <div className="grid gap-10 lg:grid-cols-2">
 
-          <h3 className="text-4xl font-bold">
-            Get In Touch
-          </h3>
+          {/* Left */}
 
-          <div className="mt-8 space-y-4">
+          <div className="space-y-6">
 
-            <p>
-              📧 sahudivyansh965@gmail.com
-            </p>
+            <div className="flex items-center gap-4">
+              <FaEnvelope className="text-2xl text-[#CCFF00]" />
+              <a
+                href={`mailto:${profile.email}`}
+                className="text-gray-300 hover:text-[#CCFF00]"
+              >
+                {profile.email}
+              </a>
+            </div>
 
-            <p>
-              📱 +91 9303684263
-            </p>
+            <div className="flex items-center gap-4">
+              <FaPhone className="text-2xl text-[#CCFF00]" />
+              <span>{profile.phone}</span>
+            </div>
 
-            <p>
-              📍 Ujjain, Madhya Pradesh
-            </p>
+            <div className="flex items-center gap-4">
+              <FaMapMarkerAlt className="text-2xl text-[#CCFF00]" />
+              <span>{profile.location}</span>
+            </div>
+
+            <div className="flex gap-5 pt-6">
+
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="text-3xl hover:text-[#CCFF00]"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="text-3xl hover:text-[#CCFF00]"
+              >
+                <FaLinkedin />
+              </a>
+
+            </div>
 
           </div>
 
-          <div className="mt-10 flex gap-4">
+          {/* Right */}
 
-            <a
-              href="mailto:sahudivyansh965@gmail.com"
-              className="rounded-md bg-[#CCFF00] px-6 py-3 font-semibold text-black"
+          <form className="space-y-5">
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full rounded-lg border border-neutral-700 bg-[#0d0d0d] p-4 outline-none focus:border-[#CCFF00]"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full rounded-lg border border-neutral-700 bg-[#0d0d0d] p-4 outline-none focus:border-[#CCFF00]"
+            />
+
+            <textarea
+              rows="6"
+              placeholder="Your Message"
+              className="w-full rounded-lg border border-neutral-700 bg-[#0d0d0d] p-4 outline-none focus:border-[#CCFF00]"
+            />
+
+            <button
+              className="rounded-lg bg-[#CCFF00] px-8 py-3 font-semibold text-black transition hover:scale-105"
             >
-              Email Me
-            </a>
+              Send Message
+            </button>
 
-            <a
-              href="https://github.com/DivyanshSahu678"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-md border border-neutral-700 px-6 py-3"
-            >
-              GitHub
-            </a>
-
-          </div>
+          </form>
 
         </div>
 
