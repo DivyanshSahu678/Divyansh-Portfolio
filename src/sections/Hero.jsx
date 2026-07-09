@@ -1,47 +1,75 @@
+import Container from "../components/Container";
+
 function Hero() {
   return (
-    <section className="flex min-h-screen items-center px-6 pt-20 md:px-20">
-      <div className="max-w-5xl">
+    <section className="relative flex min-h-screen items-center overflow-hidden">
+      <Container>
+        <div className="grid items-center gap-16 lg:grid-cols-2">
 
-        <p className="mb-6 tracking-[0.35em] uppercase text-[#ccff00]">
-          AI • ML • DATA SCIENCE
-        </p>
+          {/* Left Content */}
 
-        <h1 className="text-6xl font-black leading-none md:text-8xl lg:text-[9rem]">
-          DIVYANSH
-          <br />
-          SAHU
-        </h1>
+          <div>
 
-        <p className="mt-8 max-w-2xl text-lg text-gray-400">
-          Passionate Computer Science student focused on Artificial Intelligence,
-          Machine Learning and Data Science. I enjoy building intelligent,
-          scalable and user-centric software solutions.
-        </p>
+            <p className="mb-5 text-sm uppercase tracking-[0.4em] text-[#CCFF00]">
+              AI • ML • DATA SCIENCE
+            </p>
 
-        <div className="mt-10 flex gap-4">
+            <h1 className="text-6xl font-black leading-none md:text-8xl lg:text-[8rem]">
+              DIVYANSH
+              <br />
+              SAHU
+            </h1>
 
-          <a
-            href="https://github.com/DivyanshSahu678"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-lg bg-[#ccff00] px-6 py-3 font-semibold text-black"
-          >
-            GitHub
-          </a>
+            <p className="mt-8 max-w-xl text-lg leading-8 text-gray-400">
+              B.Tech Computer Science student passionate about Artificial
+              Intelligence, Machine Learning, Data Science and building
+              modern software experiences.
+            </p>
 
-          <a
-            href="https://www.linkedin.com/in/divyansh-sahu-34a026345"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-lg border border-gray-700 px-6 py-3"
-          >
-            LinkedIn
-          </a>
+            <div className="mt-12 flex flex-wrap gap-4">
+
+              <a
+                href="#projects"
+                className="rounded-md bg-[#CCFF00] px-7 py-4 font-semibold text-black transition hover:scale-105"
+              >
+                View Projects
+              </a>
+
+              <a
+                href="#contact"
+                className="rounded-md border border-gray-700 px-7 py-4 transition hover:border-[#CCFF00]"
+              >
+                Contact Me
+              </a>
+
+            </div>
+
+          </div>
+
+          {/* Right Side */}
+
+          <div className="flex items-center justify-center">
+
+            <div className="flex h-[420px] w-[420px] items-center justify-center rounded-full border border-[#CCFF00]/40">
+
+              <div className="flex h-[320px] w-[320px] items-center justify-center rounded-full border border-gray-700">
+
+                <div className="flex h-[220px] w-[220px] items-center justify-center rounded-full border border-[#CCFF00]">
+
+                  <span className="text-4xl font-bold text-[#CCFF00]">
+                    DS
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
-
-      </div>
+      </Container>
     </section>
   );
 }
