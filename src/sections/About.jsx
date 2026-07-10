@@ -7,7 +7,9 @@ function About() {
     <section
       id="about"
       className="border-t border-neutral-800 py-32"
+      className="py-24"
     >
+      
       <Container>
 
         <SectionTitle

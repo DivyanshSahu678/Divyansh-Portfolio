@@ -13,15 +13,16 @@ function Hero() {
   return (
     <section
   id="hero"
-  className="relative flex min-h-screen items-center overflow-hidden bg-[#050505] pt-24 text-white"
+  className="relative flex min-h-screen items-center overflow-hidden bg-black text-white"
 >
-      {/* Background Glow */}
+    
+    {/* Background Glow */}
 
       <div className="absolute left-10 top-10 h-72 w-72 rounded-full bg-[#CCFF00]/10 blur-[140px]" />
 
       <div className="absolute right-10 bottom-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-[160px]" />
 
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pt-28 pb-20 lg:grid-cols-2">
+      <div className="mx-auto grid min-h-screen w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pt-32 pb-16 lg:grid-cols-2">
 
         {/* LEFT SIDE */}
 
@@ -31,7 +32,7 @@ function Hero() {
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-8"
+            className="mb-8 mt-14 lg:mt-0"
           >
             <span className="rounded-full border border-[#CCFF00]/40 bg-[#CCFF00]/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-[#CCFF00]">
               Available For Internship
@@ -51,7 +52,7 @@ function Hero() {
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl font-black uppercase leading-[0.9] md:text-8xl lg:text-[7rem]"
+            className="text-5xl font-black uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-[6rem]"
           >
             DIVYANSH
             <br />
@@ -101,7 +102,7 @@ function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="mt-12 flex flex-wrap gap-4"
+            className="mt-12 flex flex-wrap gap-6"
           >
 
             <a
@@ -223,7 +224,7 @@ function Hero() {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="flex justify-center"
+          className="mt-12 flex justify-center lg:mt-0"
         >
           <div className="relative">
 
@@ -295,7 +296,7 @@ function Hero() {
                 duration: 5,
                 repeat: Infinity,
               }}
-              className="relative h-[380px] w-[380px] rounded-full border-4 border-[#CCFF00]/30 object-cover shadow-[0_0_60px_rgba(204,255,0,.25)] lg:h-[430px] lg:w-[430px]"
+              className="relative h-[360px] w-[360px] rounded-full border-4 border-[#CCFF00]/30 object-cover shadow-[0_0_60px_rgba(204,255,0,.25)] lg:h-[400px] lg:w-[400px]"
             />
 
           </div>
