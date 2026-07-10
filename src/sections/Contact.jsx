@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import toast from "react-hot-toast";
 import {
   FaEnvelope,
   FaPhone,
@@ -26,12 +27,12 @@ function Contact() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
-        alert("✅ Message Sent Successfully!");
+        toast.success("Message sent successfully!");
         form.current.reset();
       })
      .catch((error) => {
   console.log("EMAILJS ERROR:", error);
-
+      toast.error("Failed to send message!");
   alert(
     `Error: ${error?.text || error?.message || JSON.stringify(error)}`
   );

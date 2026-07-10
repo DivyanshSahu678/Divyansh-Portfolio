@@ -13,11 +13,11 @@ const profile = {
 
   linkedin: "https://www.linkedin.com/in/divyansh-sahu-34a026345",
 
-  bio: `I am a B.Tech Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Data Science, and Full Stack Development. I enjoy solving real-world problems through technology and continuously learning modern tools to build impactful software.`,
+bio: "I am a Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Data Science, and Full Stack Development. I enjoy building scalable web applications, solving real-world problems through code, and continuously learning modern technologies. Currently, I am looking for internship opportunities where I can contribute, learn, and grow as a software engineer.",
 
   currentFocus: [
     "Artificial Intelligence",
-    "Machine Learning",
+    "Machine Learning", 
     "Data Science",
     "Python",
     "React",

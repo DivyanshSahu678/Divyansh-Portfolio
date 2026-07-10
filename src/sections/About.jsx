@@ -26,6 +26,56 @@ function About() {
               {profile.bio}
             </p>
 
+          <div className="mt-8">
+  <span className="rounded-full border border-[#CCFF00]/30 bg-[#CCFF00]/10 px-5 py-2 text-sm font-semibold text-[#CCFF00]">
+    🚀 Open for Internship
+  </span>
+</div>
+
+          <div className="mt-10 grid grid-cols-2 gap-5">
+
+  <div className="rounded-2xl border border-neutral-800 bg-[#0d0d0d] p-6 transition hover:border-[#CCFF00]">
+    <h3 className="text-3xl font-black text-[#CCFF00]">
+      10+
+    </h3>
+
+    <p className="mt-2 text-gray-400">
+      Projects Built
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-neutral-800 bg-[#0d0d0d] p-6 transition hover:border-[#CCFF00]">
+    <h3 className="text-3xl font-black text-[#CCFF00]">
+      12+
+    </h3>
+
+    <p className="mt-2 text-gray-400">
+      Certifications
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-neutral-800 bg-[#0d0d0d] p-6 transition hover:border-[#CCFF00]">
+    <h3 className="text-3xl font-black text-[#CCFF00]">
+      AI / ML
+    </h3>
+
+    <p className="mt-2 text-gray-400">
+      Current Focus
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-neutral-800 bg-[#0d0d0d] p-6 transition hover:border-[#CCFF00]">
+    <h3 className="text-3xl font-black text-[#CCFF00]">
+      3rd
+    </h3>
+
+    <p className="mt-2 text-gray-400">
+      Year B.Tech CSE
+    </p>
+  </div>
+
+</div>
+
           </div>
 
           <div>

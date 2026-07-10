@@ -12,6 +12,12 @@ const projects = [
     github: "https://github.com/DivyanshSahu678/Divyansh-Portfolio",
 
     live: "https://divyansh-portfolio-phi.vercel.app/",
+
+    year: "2026",
+    
+    status: "Completed",
+    
+    featured: true,
   },
 
   {
@@ -28,6 +34,11 @@ const projects = [
     github: "https://github.com/DivyanshSahu678",
 
     live: "#",
+    year: "2025",
+    
+    status: "Completed",
+    
+    featured: false,
   },
 
   {
@@ -44,6 +55,9 @@ const projects = [
     github: "https://github.com/DivyanshSahu678",
 
     live: "#",
+    year: "2024",
+    status: "Completed",
+    featured: false,
   },
 ];
 

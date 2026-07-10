@@ -46,7 +46,7 @@ function Projects() {
 
               <div className="relative overflow-hidden">
 
-                {index === 0 && (
+                {project.featured && (
                   <div className="absolute left-4 top-4 z-20 flex items-center gap-2 rounded-full bg-[#CCFF00] px-4 py-2 text-sm font-bold text-black">
                     <FaStar />
                     Featured
@@ -70,6 +70,16 @@ function Projects() {
                 <h3 className="text-2xl font-bold">
                   {project.title}
                 </h3>
+
+                <div className="mt-2 flex items-center gap-3 text-sm">
+  <span className="rounded-full bg-[#CCFF00]/10 px-3 py-1 text-[#CCFF00]">
+    {project.year}
+  </span>
+
+  <span className="rounded-full border border-green-600/40 bg-green-500/10 px-3 py-1 text-green-400">
+    {project.status}
+  </span>
+</div>
 
                 <p className="mt-4 leading-7 text-gray-400">
                   {project.description}
@@ -106,15 +116,17 @@ function Projects() {
                     GitHub
                   </a>
 
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 rounded-lg bg-[#CCFF00] px-5 py-3 font-semibold text-black transition hover:scale-105"
-                  >
-                    <FaExternalLinkAlt />
-                    Live Demo
-                  </a>
+                  {project.live && project.live !== "#" && (
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-2 rounded-lg bg-[#CCFF00] px-5 py-3 font-semibold text-black transition-all duration-300 hover:scale-105"
+  >
+    <FaExternalLinkAlt />
+    Live Demo
+  </a>
+)}
 
                 </div>
 
