@@ -7,11 +7,11 @@ const projects = [
 
     image: "/projects/portfolio.png",
 
-    tech: ["React", "Tailwind", "JavaScript"],
+    tech: ["React", "Tailwind","Framer-Motion", "Vite", "EmailJS",  "JavaScript"],
 
-    github: "https://github.com/DivyanshSahu678",
+    github: "https://github.com/DivyanshSahu678/Divyansh-Portfolio",
 
-    live: "#",
+    live: "https://divyansh-portfolio-phi.vercel.app/",
   },
 
   {
