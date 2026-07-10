@@ -6,27 +6,32 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaDownload,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 function Hero() {
   return (
     <section
-      id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#050505] text-white"
-    >
+  id="hero"
+  className="relative flex min-h-screen items-center overflow-hidden bg-[#050505] pt-24 text-white"
+>
       {/* Background Glow */}
-      <div className="absolute left-1/2 top-1/2 -z-10 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#CCFF00]/10 blur-[180px]" />
 
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pt-24 pb-16 lg:grid-cols-2">
+      <div className="absolute left-10 top-10 h-72 w-72 rounded-full bg-[#CCFF00]/10 blur-[140px]" />
+
+      <div className="absolute right-10 bottom-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-[160px]" />
+
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pt-28 pb-20 lg:grid-cols-2">
 
         {/* LEFT SIDE */}
+
         <div>
 
           <motion.div
-            initial={{ opacity: 0, y: -30 }}
+            initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .8 }}
-            className="mb-6"
+            transition={{ duration: 0.8 }}
+            className="mb-8"
           >
             <span className="rounded-full border border-[#CCFF00]/40 bg-[#CCFF00]/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-[#CCFF00]">
               Available For Internship
@@ -36,24 +41,29 @@ function Hero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: .2 }}
-            className="mb-4 text-lg uppercase tracking-[0.4em] text-gray-400"
+            transition={{ delay: 0.2 }}
+            className="mb-4 text-lg uppercase tracking-[0.35em] text-gray-400"
           >
             Hello, I'm
           </motion.p>
 
           <motion.h1
-            initial={{ opacity: 0, y: 80 }}
+            initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-8xl lg:text-[7rem]"
+            className="text-6xl font-black uppercase leading-[0.9] md:text-8xl lg:text-[7rem]"
           >
             DIVYANSH
             <br />
-            <span className="text-[#CCFF00]">SAHU</span>
+
+            <span className="text-[#CCFF00]">
+              SAHU
+            </span>
+
           </motion.h1>
 
           <div className="mt-8 text-2xl font-bold md:text-4xl">
+
             <TypeAnimation
               sequence={[
                 "AI / ML Engineer",
@@ -70,18 +80,19 @@ function Hero() {
               repeat={Infinity}
               className="text-[#CCFF00]"
             />
+
           </div>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: .6 }}
+            transition={{ delay: 0.6 }}
             className="mt-8 max-w-xl text-lg leading-8 text-gray-400"
           >
             Passionate Computer Science Engineering student focused on
-            Artificial Intelligence, Machine Learning, Data Science and
-            Full Stack Development. I enjoy building modern, scalable and
-            user-friendly software solutions.
+            Artificial Intelligence, Machine Learning, Data Science,
+            and Full Stack Development. I love creating scalable,
+            intelligent and modern software solutions.
           </motion.p>
 
           {/* Buttons */}
@@ -89,36 +100,85 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: .8 }}
-            className="mt-12 flex flex-wrap gap-5"
+            transition={{ delay: 0.8 }}
+            className="mt-12 flex flex-wrap gap-4"
           >
+
             <a
               href="#projects"
-              className="rounded-lg bg-[#CCFF00] px-8 py-4 font-bold text-black transition hover:scale-105"
+              className="rounded-lg bg-[#CCFF00] px-8 py-4 font-bold text-black transition duration-300 hover:scale-105"
             >
               View Projects
             </a>
 
             <a
-              href="/resume.pdf"
-              className="flex items-center gap-2 rounded-lg border border-neutral-700 px-8 py-4 transition hover:border-[#CCFF00]"
+              href="/resume/Divyansh_Sahu_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 rounded-lg border border-[#CCFF00] px-6 py-4 font-semibold text-[#CCFF00] transition duration-300 hover:bg-[#CCFF00] hover:text-black"
             >
-              <FaDownload size={18} />
-              Resume
+              <FaExternalLinkAlt />
+              View Resume
             </a>
+
+            <a
+              href="/resume/Divyansh_Sahu_Resume.pdf"
+              download
+              className="flex items-center gap-2 rounded-lg border border-[#CCFF00] px-6 py-4 font-semibold text-[#CCFF00] transition duration-300 hover:bg-[#CCFF00] hover:text-black"
+            >
+              <FaDownload />
+              Download Resume
+            </a>
+
           </motion.div>
+
+          {/* Stats */}
+
+          <div className="mt-14 grid grid-cols-3 gap-8">
+
+            <div>
+              <h2 className="text-4xl font-black text-[#CCFF00]">
+                12+
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Certificates
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-black text-[#CCFF00]">
+                10+
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Projects
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-black text-[#CCFF00]">
+                2+
+              </h2>
+
+              <p className="mt-2 text-gray-400">
+                Years Learning
+              </p>
+            </div>
+
+          </div>
 
           {/* Contact */}
 
           <div className="mt-12 flex flex-wrap gap-8 text-gray-400">
 
             <div className="flex items-center gap-2">
-              <FaEnvelope size={18} />
+              <FaEnvelope />
               sahudivyansh965@gmail.com
             </div>
 
             <div className="flex items-center gap-2">
-              <FaMapMarkerAlt size={18} />
+              <FaMapMarkerAlt />
               Ujjain, India
             </div>
 
@@ -157,7 +217,7 @@ function Hero() {
 
         </div>
 
-        {/* RIGHT SIDE */}
+                {/* RIGHT SIDE */}
 
         <motion.div
           initial={{ opacity: 0, x: 100 }}
@@ -167,19 +227,81 @@ function Hero() {
         >
           <div className="relative">
 
+            {/* Glow */}
+
             <div className="absolute inset-0 rounded-full bg-[#CCFF00]/20 blur-3xl"></div>
 
-            <img
+            {/* Floating Card 1 */}
+
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+              }}
+              className="absolute -left-10 top-10 rounded-xl border border-neutral-700 bg-black/70 px-4 py-3 backdrop-blur-md"
+            >
+              🐍 Python
+            </motion.div>
+
+            {/* Floating Card 2 */}
+
+            <motion.div
+              animate={{ y: [0, 15, 0] }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+              }}
+              className="absolute -right-10 top-24 rounded-xl border border-neutral-700 bg-black/70 px-4 py-3 backdrop-blur-md"
+            >
+              ⚛ React
+            </motion.div>
+
+            {/* Floating Card 3 */}
+
+            <motion.div
+              animate={{ y: [0, -12, 0] }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+              }}
+              className="absolute left-16 -bottom-2 rounded-xl border border-neutral-700 bg-black/70 px-4 py-3 backdrop-blur-md"
+            >
+              🤖 AI / ML
+            </motion.div>
+
+            {/* Floating Card 4 */}
+
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+              }}
+              className="absolute right-8 bottom-5 rounded-xl border border-neutral-700 bg-black/70 px-4 py-3 backdrop-blur-md"
+            >
+              💻 Full Stack
+            </motion.div>
+
+            {/* Profile Image */}
+
+            <motion.img
               src="/profile.png"
               alt="Divyansh Sahu"
-              className="relative h-[430px] w-[430px] rounded-full border-4 border-[#CCFF00]/30 object-cover shadow-2xl"
+              animate={{
+                y: [0, -12, 0],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+              }}
+              className="relative h-[380px] w-[380px] rounded-full border-4 border-[#CCFF00]/30 object-cover shadow-[0_0_60px_rgba(204,255,0,.25)] lg:h-[430px] lg:w-[430px]"
             />
 
           </div>
         </motion.div>
 
       </div>
-
     </section>
   );
 }

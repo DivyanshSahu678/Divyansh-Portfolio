@@ -1,17 +1,23 @@
 function SectionTitle({ number, title, subtitle }) {
   return (
-    <div className="mb-16">
-      <p className="mb-2 text-sm uppercase tracking-[0.35em] text-[#ccff00]">
-        {number}
-      </p>
+    <div className="mb-12">
+      <div className="flex items-center gap-3">
+        <span className="text-cyan-400 text-lg font-mono">
+          {number}
+        </span>
 
-      <h2 className="text-4xl font-black md:text-6xl">
-        {title}
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          {title}
+        </h2>
 
-      <p className="mt-4 max-w-2xl text-gray-400">
-        {subtitle}
-      </p>
+        <div className="h-px bg-gray-700 flex-1 ml-4"></div>
+      </div>
+
+      {subtitle && (
+        <p className="mt-4 text-gray-400 max-w-2xl">
+          {subtitle}
+        </p>
+      )}
     </div>
   );
 }
