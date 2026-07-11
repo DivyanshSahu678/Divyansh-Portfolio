@@ -102,3 +102,19 @@ section{
     scroll-margin-top:90px;
 
 }
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+background:#CCFF00;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#d8ff3f;
+}

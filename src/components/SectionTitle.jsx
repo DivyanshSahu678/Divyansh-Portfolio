@@ -1,7 +1,7 @@
 function SectionTitle({ number, title, subtitle }) {
   return (
-    <div className="mb-12">
-      <div className="flex items-center gap-3">
+    <div className="mb-16">
+      <div className="flex items-center gap-4">
         <span className="text-cyan-400 text-lg font-mono">
           {number}
         </span>
@@ -14,7 +14,7 @@ function SectionTitle({ number, title, subtitle }) {
       </div>
 
       {subtitle && (
-        <p className="mt-4 text-gray-400 max-w-2xl">
+        <p className="mt-5 text-gray-400 max-w-2xl">
           {subtitle}
         </p>
       )}

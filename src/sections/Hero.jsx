@@ -149,7 +149,7 @@ function Hero() {
 
             <div>
               <h2 className="text-4xl font-black text-[#CCFF00]">
-                10+
+                5+
               </h2>
 
               <p className="mt-2 text-gray-400">

@@ -1,64 +1,41 @@
 const projects = [
-  {
-    id: 1,
-    title: "Portfolio Website",
-    description:
-      "A modern developer portfolio built using React, Tailwind CSS and Framer Motion.",
+{
+  id: 1,
+  title: "Portfolio Website",
 
-    image: "/projects/portfolio.png",
+  description:
+    "A modern developer portfolio built using React, Tailwind CSS, Framer Motion and EmailJS with smooth animations and responsive design.",
 
-    tech: ["React", "Tailwind","Framer-Motion", "Vite", "EmailJS",  "JavaScript"],
+  image: "/projects/portfolio-1.png",
 
-    github: "https://github.com/DivyanshSahu678/Divyansh-Portfolio",
+  screenshots: [
+    "/projects/portfolio-1.png",
+    "/projects/portfolio-2.png",
+    "/projects/portfolio-3.png",
+    "/projects/portfolio-4.png",
+    "/projects/portfolio-5.png",
+  ],
 
-    live: "https://divyansh-portfolio-phi.vercel.app/",
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Vite",
+    "EmailJS",
+    "JavaScript",
+  ],
 
-    year: "2026",
-    
-    status: "Completed",
-    
-    featured: true,
-  },
+  github: "https://github.com/DivyanshSahu678/Divyansh-Portfolio",
 
-  {
-    id: 2,
-    title: "Online Library Management",
+  live: "https://divyansh-portfolio-phi.vercel.app/",
 
-    description:
-      "Library Management System using Java, JSP, Servlet and MySQL.",
+  year: "2026",
 
-    image: "/projects/library.png",
+  status: "Completed",
 
-    tech: ["Java", "JSP", "Servlet", "MySQL"],
-
-    github: "https://github.com/DivyanshSahu678",
-
-    live: "#",
-    year: "2025",
-    
-    status: "Completed",
-    
-    featured: false,
-  },
-
-  {
-    id: 3,
-    title: "Student Registration System",
-
-    description:
-      "Responsive registration system with validation using HTML, CSS and JavaScript.",
-
-    image: "/projects/student.png",
-
-    tech: ["HTML", "CSS", "JavaScript"],
-
-    github: "https://github.com/DivyanshSahu678",
-
-    live: "#",
-    year: "2024",
-    status: "Completed",
-    featured: false,
-  },
+  featured: true,
+}
+  
 ];
 
 export default projects;

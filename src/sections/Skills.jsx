@@ -37,7 +37,7 @@ const icons = {
 
 function Skills() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-32">
       <Container>
 
         <SectionTitle
@@ -46,23 +46,23 @@ function Skills() {
           subtitle="Technologies I use to build modern applications."
         />
 
-        <div className="mb-14 flex flex-wrap justify-center gap-5">
+        <div className="mb-16 flex flex-wrap justify-center gap-10">
 
-  <div className="rounded-full border border-[#CCFF00]/30 bg-[#CCFF00]/10 px-6 py-3 text-[#CCFF00]">
+  <div className="rounded-full border border-[#CCFF00]/40 bg-[#CCFF00]/10 px-6 py-4 text-[#CCFF00]">
     12 Technologies
   </div>
 
-  <div className="rounded-full border border-[#CCFF00]/30 bg-[#CCFF00]/10 px-6 py-3 text-[#CCFF00]">
+  <div className="rounded-full border border-[#CCFF00]/40 bg-[#CCFF00]/10 px-6 py-4 text-[#CCFF00]">
     AI / ML
   </div>
 
-  <div className="rounded-full border border-[#CCFF00]/30 bg-[#CCFF00]/10 px-6 py-3 text-[#CCFF00]">
+  <div className="rounded-full border border-[#CCFF00]/40 bg-[#CCFF00]/10 px-6 py-4 text-[#CCFF00]">
     Full Stack
   </div>
 
 </div>
 
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
 
           {skills.map((skill) => (
             <div

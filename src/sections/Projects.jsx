@@ -1,8 +1,11 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   FaGithub,
   FaExternalLinkAlt,
   FaStar,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa";
 
 import Container from "../components/Container";
@@ -10,10 +13,78 @@ import SectionTitle from "../components/SectionTitle";
 import projects from "../data/projects";
 
 function Projects() {
+
+  const [currentImages, setCurrentImages] = useState({});
+
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+
+      setCurrentImages((prev) => {
+
+        const updated = {};
+
+        projects.forEach((project) => {
+
+          if (project.screenshots) {
+
+            const current = prev[project.id] || 0;
+
+            updated[project.id] =
+              (current + 1) % project.screenshots.length;
+
+          }
+
+        });
+
+        return {
+          ...prev,
+          ...updated,
+        };
+
+      });
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+  const nextImage = (project) => {
+
+    if (!project.screenshots) return;
+
+    setCurrentImages((prev) => ({
+      ...prev,
+      [project.id]:
+        ((prev[project.id] || 0) + 1) %
+        project.screenshots.length,
+    }));
+
+  };
+
+  const prevImage = (project) => {
+
+    if (!project.screenshots) return;
+
+    setCurrentImages((prev) => ({
+
+      ...prev,
+
+      [project.id]:
+        ((prev[project.id] || 0) -
+          1 +
+          project.screenshots.length) %
+        project.screenshots.length,
+
+    }));
+
+  };
+
   return (
     <section
       id="projects"
-      className="bg-[#050505] py-24 text-white"
+      className="bg-[#050505] py-32 text-white"
     >
       <Container>
 
@@ -23,7 +94,7 @@ function Projects() {
           subtitle="Some of my recent work and personal projects."
         />
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
 
           {projects.map((project, index) => (
 
@@ -54,12 +125,59 @@ function Projects() {
                 )}
 
                 <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-60 w-full object-cover transition duration-700 group-hover:scale-110"
-                />
+  src={
+    project.screenshots
+      ? project.screenshots[currentImages[project.id] || 0]
+      : project.image
+  }
+  alt={project.title}
+  className="h-60 w-full object-cover transition duration-700 group-hover:scale-110"
+/>
+
+{project.screenshots && (
+
+  <>
+
+    <button
+      onClick={() => prevImage(project)}
+      className="absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition hover:bg-[#CCFF00] hover:text-black"
+    >
+      <FaChevronLeft />
+    </button>
+
+    <button
+      onClick={() => nextImage(project)}
+      className="absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition hover:bg-[#CCFF00] hover:text-black"
+    >
+      <FaChevronRight />
+    </button>
+
+  </>
+
+)}
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
+
+                {project.screenshots && (
+
+  <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+
+    {project.screenshots.map((_, i) => (
+
+      <span
+        key={i}
+        className={`h-2 w-2 rounded-full transition-all duration-300 ${
+          (currentImages[project.id] || 0) === i
+            ? "bg-[#CCFF00] w-6"
+            : "bg-white/50"
+        }`}
+      />
+
+    ))}
+
+  </div>
+
+)}
 
               </div>
 

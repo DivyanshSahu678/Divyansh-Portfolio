@@ -42,7 +42,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#050505] py-24 text-white"
+      className="bg-[#050505] py-32 text-white"
     >
       <Container>
 
