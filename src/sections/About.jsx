@@ -6,9 +6,8 @@ function About() {
   return (
     <section
       id="about"
-      className="border-t border-neutral-800 py-32"
-      className="py-32"
-    >
+       style={{ marginTop: "2px" }}
+      className="border-t border-neutral-800 py-32">
       
       <Container>
 

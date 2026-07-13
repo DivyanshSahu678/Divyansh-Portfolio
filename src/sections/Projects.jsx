@@ -84,6 +84,7 @@ function Projects() {
   return (
     <section
       id="projects"
+      style={{ marginTop: "20px" }}
       className="bg-[#050505] py-32 text-white"
     >
       <Container>
@@ -94,7 +95,7 @@ function Projects() {
           subtitle="Some of my recent work and personal projects."
         />
 
-        <div className="mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mb-20 mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
 
           {projects.map((project, index) => (
 

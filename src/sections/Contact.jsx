@@ -42,6 +42,7 @@ function Contact() {
   return (
     <section
       id="contact"
+      style={{ marginTop: "20px" }}
       className="bg-[#050505] py-32 text-white"
     >
       <Container>
@@ -63,9 +64,9 @@ function Contact() {
             transition={{ duration: .6 }}
           >
 
-            <h2 className="text-4xl font-bold">
+            <h3 className="text-4xl font-bold">
               Get In Touch
-            </h2>
+            </h3>
 
             <p className="mt-6 leading-8 text-gray-400">
               I'm always interested in internships, freelance work,

@@ -37,7 +37,7 @@ const icons = {
 
 function Skills() {
   return (
-    <section id="skills" className="py-32">
+    <section id="skills"  style={{ marginTop: "20px" }} className="mt-32 py-32">
       <Container>
 
         <SectionTitle

@@ -8,6 +8,7 @@ function Education() {
   return (
     <section
       id="education"
+      style={{ marginTop: "20px" }}
       className="bg-[#050505] py-32 text-white"
     >
       <Container>

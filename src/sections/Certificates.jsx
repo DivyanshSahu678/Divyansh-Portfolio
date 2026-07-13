@@ -9,7 +9,8 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="bg-[#050505] py-32 text-white"
+       style={{ marginTop: "20px" }}
+      className="bg-[#050505] mt-32 py-32 text-white"
     >
       <Container>
 
