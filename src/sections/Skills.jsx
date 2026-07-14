@@ -12,12 +12,19 @@ import {
   FaGitAlt,
   FaGithub,
   FaDatabase,
+  FaChartBar,
+  FaFilePdf,
+  FaBrain,
+  FaGoogle
 } from "react-icons/fa";
 
 import {
   SiCplusplus,
   SiTensorflow,
   SiScikitlearn,
+  SiPandas,
+  // SiSttreamlit,
+  // SiGoogle,
 } from "react-icons/si";
 
 const icons = {
@@ -33,6 +40,13 @@ const icons = {
   GitHub: <FaGithub size={42} />,
   "Machine Learning": <SiTensorflow size={42} />,
   "Data Science": <SiScikitlearn size={42} />,
+  //  Streamlit: <FaRobot size={42} />,
+  Pandas: <SiPandas size={42} />,
+  "Scikit-Learn": <SiScikitlearn size={42} />,
+  Matplotlib: <FaChartBar size={42} />,
+  ReportLab: <FaFilePdf size={42} />,
+  "Prompt Engineering": <FaBrain size={42} />,
+  "Google Gemini API": <FaGoogle size={42} />,
 };
 
 function Skills() {

@@ -10,7 +10,12 @@ const skills = [
   "Git",
   "GitHub",
   "Machine Learning",
-  "Data Science"
+  "Data Science",
+  "Pandas",
+  "Matplotlib",
+  "ReportLab",
+  "Google Gemini API",
+  "Prompt Engineering"
 ];
 
 export default skills;
