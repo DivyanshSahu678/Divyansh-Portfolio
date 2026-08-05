@@ -74,6 +74,42 @@ const projects = [
   featured: true
 }
 
+,
+{
+  id: 4,
+
+  title: "Personal Expense Tracker",
+
+  description:
+    "A Python-based command-line application for tracking daily expenses using SQLite. Features include expense management, category-wise search, monthly summaries, input validation, and a modern Rich CLI interface.",
+
+  image: "/projects/expense-1.png",
+
+  screenshots: [
+    "/projects/expense-1.png",
+    "/projects/expense-2.png",
+    "/projects/expense-3.png",
+    "/projects/expense-4.png",
+    "/projects/expense-5.png"
+  ],
+
+  tech: [
+    "Python",
+    "SQLite",
+    "Rich"
+  ],
+
+  github: "https://github.com/DivyanshSahu678/Personal-Expense-Tracker",
+
+  live: "",
+
+  year: "2026",
+
+  status: "Completed",
+
+  featured: false
+}
+
 ];
 
 export default projects;
